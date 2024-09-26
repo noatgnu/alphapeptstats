@@ -20,7 +20,6 @@ diffxpy = "0.7.4"
 anndata = "0.9.1"
 umap-learn = "0.5.3"
 streamlit = "1.23.1"
-tables = "3.7.0"
 numpy = "1.26.4"
 numba = "0.60.0"
 numba-stats = "1.10.0"
@@ -29,10 +28,10 @@ click = ">=8.1.7,<9.0.0"
 kaleido = "0.2.1"
 combat = "0.3.3"
 xlsxwriter = "3.1.0"
-pyteomics = "4.6.0"
+pyteomics = "4.7.3"
 openpyxl = ">=3.0.10"
 nbformat = ">=5.0"
-
+tables = "3.8.0"
 
 [build-system]
 requires = ["poetry-core"]
