@@ -63,7 +63,7 @@ openpyxl==3.1.5 ; python_version >= "3.9" and python_full_version != "3.9.7" and
 outdated==0.2.2 ; python_version >= "3.9" and python_full_version != "3.9.7" and python_version < "3.12"
 packaging==23.2 ; python_version >= "3.9" and python_full_version != "3.9.7" and python_version < "3.12"
 pandas-flavor==0.6.0 ; python_version >= "3.9" and python_full_version != "3.9.7" and python_version < "3.12"
-pandas==2.2.0 ; python_version >= "3.9" and python_full_version != "3.9.7" and python_version < "3.12"
+pandas==2.2.1 ; python_version >= "3.9" and python_full_version != "3.9.7" and python_version < "3.12"
 parso==0.8.4 ; python_version >= "3.9" and python_full_version != "3.9.7" and python_version < "3.12"
 partd==1.4.2 ; python_version >= "3.9" and python_full_version != "3.9.7" and python_version < "3.12"
 patsy==0.5.6 ; python_version >= "3.9" and python_full_version != "3.9.7" and python_version < "3.12"
