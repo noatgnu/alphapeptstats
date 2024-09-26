@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "alphapeptstats"
+name = "alphastats"
 version = "0.1.0"
 description = ""
 authors = ["Toan Phung <toan.phung@proteo.info>"]
