@@ -1,0 +1,8 @@
+# only needed for local development and testing
+coverage>=7.6.0
+jupyter>=1.1.1
+nbmake>=1.5.4
+nbformat>=5.10.4
+pre-commit>=4.0.0
+pytest>=8.3.2
+pytest-cov>=6.0.0

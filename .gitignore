@@ -5,10 +5,17 @@ alphastats.egg-info
 _build
 build
 dist
+dist_pyinstaller
+build_pyinstaller
+
 .coverage
-.idea/alphapeptstats.iml
-.idea/inspectionProfiles/profiles_settings.xml
-.idea/misc.xml
-.idea/modules.xml
-.idea/vcs.xml
-.idea/workspace.xml
+
+# editors
+.idea
+.vscode
+
+**/.ipynb_checkpoints
+
+**/*secrets.toml
+
+sessions/
