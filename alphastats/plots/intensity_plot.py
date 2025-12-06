@@ -72,8 +72,7 @@ class IntensityPlot(PlotUtils):
     @staticmethod
     def _add_significance(plot):
         # add sginficance pvalue, and stars to pairwise intensity plot
-        plot_dict = plot.to_plotly_json()
-        data = plot_dict.get("data")
+        data = plot.data
 
         if len(data) != 2:
             logging.warning(
@@ -81,8 +80,8 @@ class IntensityPlot(PlotUtils):
             )
             return plot
 
-        group1, group2 = data[0]["name"], data[1]["name"]
-        y_array1, y_array2 = data[0]["y"], data[1]["y"]
+        group1, group2 = data[0].name, data[1].name
+        y_array1, y_array2 = np.array(data[0].y), np.array(data[1].y)
         # do ttest
         pvalue = scipy.stats.ttest_ind(y_array1, y_array2).pvalue
 

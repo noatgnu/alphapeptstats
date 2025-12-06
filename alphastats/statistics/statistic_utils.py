@@ -36,6 +36,7 @@ def add_metadata_column(metadata: pd.DataFrame, group1_list: list, group2_list: 
         metadata[Cols.SAMPLE].isin(group2_list),
     ]
     choices = ["group1", "group2"]
-    metadata[column] = np.select(conditions, choices, default=np.nan)
+    result = np.select(conditions, choices, default="")
+    metadata[column] = pd.Series(result, index=metadata.index).replace("", np.nan)
 
     return metadata, column

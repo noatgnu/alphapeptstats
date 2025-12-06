@@ -12,6 +12,10 @@ from alphastats.statistics.statistic_utils import (
     calculate_foldchange,
 )
 
+# NumPy 2.x compatibility: restore deprecated np.float alias for diffxpy
+if not hasattr(np, 'float'):
+    np.float = np.float64
+
 
 class DifferentialExpressionAnalysis:
     def __init__(

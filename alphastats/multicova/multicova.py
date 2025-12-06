@@ -422,11 +422,10 @@ def get_tstats(newX, betas, MSE):
     return ts_b, ps_b
 
 
-@nb.njit
 def get_cdf(ts, df):
-    pvals = [0.0][1:]
+    pvals = []
     for t in ts:
-        pvals.append(2 * (1 - nbs.t_cdf(np.abs(t), df, 0, 1)))
+        pvals.append(2 * (1 - stats.t.cdf(np.abs(t), df)))
     return pvals
 
 

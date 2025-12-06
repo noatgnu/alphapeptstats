@@ -302,13 +302,15 @@ class DataSet:
         group: Optional[str] = None,
         circle: bool = False,
         perplexity: int = 5,
-        n_iter: int = 1000,
+        max_iter: int = 1000,
     ):
         """Plot t-distributed stochastic neighbor embedding (t-SNE)
 
         Args:
             group (str, optional): column in metadata that should be used for coloring. Defaults to None.
             circle (bool, optional): draw circle around each group. Defaults to False.
+            perplexity (int, optional): perplexity parameter for t-SNE. Defaults to 5.
+            max_iter (int, optional): maximum number of iterations for optimization. Defaults to 1000.
 
         Returns:
             plotly.graph_objects._figure.Figure: t-SNE plot
@@ -321,7 +323,7 @@ class DataSet:
             method="tsne",
             circle=circle,
             perplexity=perplexity,
-            n_iter=n_iter,
+            max_iter=max_iter,
         )
         return dimensionality_reduction.plot
 

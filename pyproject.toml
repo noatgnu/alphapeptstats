@@ -10,8 +10,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "alphastats"
+version = "0.7.3-dev0"
 requires-python = ">=3.9,<4"
-dynamic = ["version", "dependencies"]
+dynamic = ["dependencies"]
 
 authors = [
     {name = "Mann Labs", email = "elena.krismer@gmail.com"}
@@ -51,8 +52,6 @@ find = {include = ["alphastats", "alphastats.*"]}
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}
-version = {attr = "alphastats.__version__"}
-readme = {file = "README.md"}
 
 [tool.setuptools.package-dir]
 "" = "."
